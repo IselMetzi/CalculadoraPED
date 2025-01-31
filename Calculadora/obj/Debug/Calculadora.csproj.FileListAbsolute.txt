@@ -18,3 +18,13 @@ C:\Users\michi\OneDrive\Escritorio\calculadora\Calculadora\Calculadora\obj\Debug
 C:\Users\michi\OneDrive\Escritorio\calculadora\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
 C:\Users\michi\OneDrive\Escritorio\calculadora\Calculadora\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\michi\OneDrive\Escritorio\calculadora\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.AssemblyReference.cache
+C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.Form1.resources
+C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.pdb

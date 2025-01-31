@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace Calculadora
 {
     //Isel Metzí Carrillo Mejía, Carnet: CM240437
+    //Javier Enrique Monge Argueta, Carnet: MA240490
     public partial class Form1 : Form
     {
         public double num1, resultado, num2;
@@ -114,6 +115,11 @@ namespace Calculadora
             }
         }
 
+        private double RadianesAGrados(double radianes)
+        {
+            return radianes * 180 / Math.PI; // Se obtiene el valor ingresado por el usuario, se multiplica por 180 y se divide entre PI para pasar este grados.
+        }
+
         public double operar(double operador1,double operador2,string signo)
         {
             double Resultado = 0.0;
@@ -139,6 +145,32 @@ namespace Calculadora
                 case "log":
                        Resultado = Math.Log(operador1,10);
 
+                    break;
+                case "sin":
+                    Resultado = Math.Round(Math.Sin(RadianesAGrados(operador1))); // Se asigna el valor del sen del dato ingresado a resultado con el ángulo en grados
+                    break;
+                case "cos":
+                    Resultado = Math.Round(Math.Cos(RadianesAGrados(operador1))); // Se asigna el valor del cos del dato ingresado a resultado con el ángulo en grados
+                    break;
+                case "tan":
+                    if (Math.Round(Math.Cos(RadianesAGrados(operador1))) == 0)
+                    {
+                        MessageBox.Show("Error: Tangente indefinida para este ángulo", "Calculadora", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return 0;
+                    }
+                    Resultado = Math.Round(Math.Tan(RadianesAGrados(operador1))); // Se asigna el valor del tan del dato ingresado a resultado con el ángulo en grados
+                    break;
+                case "pow":
+                    try
+                    {
+                        // Calculamos x elevado a y usando Math.Pow
+                        Resultado = Math.Pow(operador1, operador2);
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Error: Operación no válida", "Calculadora", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return 0;
+                    }
                     break;
             }
             return Resultado;
@@ -217,6 +249,38 @@ namespace Calculadora
                             MessageBox.Show("Seleccione una operación para realizar");
                         }
                         break;
+                    case 5: // Seno
+                        if (Is1)
+                        {
+                            actualizar_pantalla(operar(num1, 0, "sin").ToString());
+                            Is1 = false;
+                        }
+                        break;
+
+                    case 6: // Coseno
+                        if (Is1)
+                        {
+                            actualizar_pantalla(operar(num1, 0, "cos").ToString());
+                            Is1 = false;
+                        }
+                        break;
+
+                    case 7: // Tangente
+                        if (Is1)
+                        {
+                            actualizar_pantalla(operar(num1, 0, "tan").ToString());
+                            Is1 = false;
+                        }
+                        break;
+
+                    case 8: // Potencia
+                        if (Is1)
+                        {
+                            num2 = obtener_valor();
+                            actualizar_pantalla(operar(num1, num2, "pow").ToString());
+                            Is1 = false;
+                        }
+                        break;
                 }
             } catch {
                 MessageBox.Show("Esta operación requiere de dos operandos");
@@ -237,6 +301,46 @@ namespace Calculadora
         private void button7_Click(object sender, EventArgs e)
         {
             actualizar_pantalla("-");
+        }
+
+        private void button18_Click(object sender, EventArgs e) // Click al boton "sen"
+        {
+            if (!Is1)
+            {
+                num1 = obtener_valor(); // Se obtiene el valor en radianes de la pantalla
+                Is1 = true;
+                operacion = 5; // Operación para seno
+            }
+        }
+
+        private void button19_Click(object sender, EventArgs e) // Click al boton "cos"
+        {
+            if (!Is1)
+            {
+                num1 = obtener_valor(); // Se obtiene el valor en radianes de la pantalla
+                Is1 = true;
+                operacion = 6; // Operación para coseno
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e) // Click al boton "tan"
+        {
+            if (!Is1)
+            {
+                num1 = obtener_valor(); // Se obtiene el valor en radianes de la pantalla
+                Is1 = true;
+                operacion = 7; // Operación para tangente
+            }
+        }
+
+        private void button23_Click(object sender, EventArgs e) // Click al boton "X^n"
+        {
+            if (!Is1)
+            {
+                num1 = obtener_valor(); // Se obtiene la base de la potencia
+                Is1 = true;
+                operacion = 8; // Operación para potencia
+            }
         }
 
         public void limpiar_pantalla() { //Para limpiar el texbox llamado pantalla

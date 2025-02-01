@@ -38,3 +38,13 @@ C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\
 C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
 C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\michi\OneDrive\Escritorio\caluladoraped\CalculadoraPED\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\michi\OneDrive\Escritorio\caluladoraped\CalculadoraPED\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\michi\OneDrive\Escritorio\caluladoraped\CalculadoraPED\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\michi\OneDrive\Escritorio\caluladoraped\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.AssemblyReference.cache
+C:\Users\michi\OneDrive\Escritorio\caluladoraped\CalculadoraPED\Calculadora\obj\Debug\Calculadora.Form1.resources
+C:\Users\michi\OneDrive\Escritorio\caluladoraped\CalculadoraPED\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+C:\Users\michi\OneDrive\Escritorio\caluladoraped\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+C:\Users\michi\OneDrive\Escritorio\caluladoraped\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\michi\OneDrive\Escritorio\caluladoraped\CalculadoraPED\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\michi\OneDrive\Escritorio\caluladoraped\CalculadoraPED\Calculadora\obj\Debug\Calculadora.pdb

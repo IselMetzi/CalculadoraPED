@@ -115,9 +115,12 @@ namespace Calculadora
             }
         }
 
-        private double RadianesAGrados(double radianes)
+       
+
+        private double GradosARadianes(double grados)
         {
-            return radianes * 180 / Math.PI; // Se obtiene el valor ingresado por el usuario, se multiplica por 180 y se divide entre PI para pasar este grados.
+            double result = grados * Math.PI / 180;
+            return result;
         }
 
         public double operar(double operador1,double operador2,string signo)
@@ -148,18 +151,14 @@ namespace Calculadora
 
                     break;
                 case "sin":
-                    Resultado = Math.Round(Math.Sin(RadianesAGrados(operador1))); // Se asigna el valor del sen del dato ingresado a resultado con el ángulo en grados
+                    Resultado = Math.Sin(GradosARadianes(operador1)); // Se asigna el valor del sen del dato ingresado a resultado con el ángulo en grados
                     break;
                 case "cos":
-                    Resultado = Math.Round(Math.Cos(RadianesAGrados(operador1))); // Se asigna el valor del cos del dato ingresado a resultado con el ángulo en grados
+                    Resultado = Math.Cos(GradosARadianes(operador1));// Se asigna el valor del cos del dato ingresado a resultado con el ángulo en grados
                     break;
                 case "tan":
-                    if (Math.Round(Math.Cos(RadianesAGrados(operador1))) == 0)
-                    {
-                        MessageBox.Show("Error: Tangente indefinida para este ángulo", "Calculadora", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return 0;
-                    }
-                    Resultado = Math.Round(Math.Tan(RadianesAGrados(operador1))); // Se asigna el valor del tan del dato ingresado a resultado con el ángulo en grados
+                    
+                    Resultado = Math.Tan(GradosARadianes(operador1)); // Se asigna el valor del tan del dato ingresado a resultado con el ángulo en grados
                     break;
                 case "pow":
                     try
@@ -244,8 +243,8 @@ namespace Calculadora
                             }
                             else
                             {
-                                num2 = 0; //asigno un valor cualquiera a num 2 para poder enviar lo demas al metodo "operar" sin tener que crear una sobrecarga
-                                actualizar_pantalla(operar(num1, num2, "log").ToString());
+                                
+                                actualizar_pantalla(operar(num1, 0, "log").ToString());
                                 
                             }
                             Is1 = false;
@@ -274,7 +273,17 @@ namespace Calculadora
                     case 7: // Tangente
                         if (Is1)
                         {
-                            actualizar_pantalla(operar(num1, 0, "tan").ToString());
+                            if (Math.Round(Math.Cos(GradosARadianes(num1))) == 0)
+                            {
+                                limpiar_pantalla();
+                                actualizar_pantalla("E");
+
+                            }
+                            else
+                            {
+                                actualizar_pantalla(operar(num1, 0, "tan").ToString());
+                            }
+                            
                             Is1 = false;
                         }
                         break;

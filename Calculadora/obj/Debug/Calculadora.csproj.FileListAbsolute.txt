@@ -28,3 +28,13 @@ C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.
 C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
 C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\Javi\Documents\GitHub\CalculadoraPED\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.AssemblyReference.cache
+C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\Calculadora.Form1.resources
+C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\ander\Documentos\Practicas progra\CalculadoraPED\Calculadora\obj\Debug\Calculadora.pdb

@@ -143,7 +143,8 @@ namespace Calculadora
                     }
                     break;
                 case "log":
-                       Resultado = Math.Log(operador1,10);
+                    //En este caso se evalua la funcion logaritmo agregandole un 10 que es la base del logaritmo
+                    Resultado = Math.Log(operador1,10);
 
                     break;
                 case "sin":
@@ -171,6 +172,11 @@ namespace Calculadora
                         MessageBox.Show("Error: Operación no válida", "Calculadora", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return 0;
                     }
+                    break;
+                case "ln":
+                    //En este caso se evalua al no agregarle valor de cual sera la base del logaritmo
+                    //Por defecto toma al logaritmo con base e que seria un logaritmo natural
+                    Resultado = Math.Log(operador1);
                     break;
             }
             return Resultado;
@@ -281,6 +287,27 @@ namespace Calculadora
                             Is1 = false;
                         }
                         break;
+                    //Se programa para la funcion de poder calcular un logaritmo natural de un numero
+                    case 9:
+                        if (Is1)
+                        {
+                            if (num1 <= 0)
+                            {
+                                limpiar_pantalla();
+                                actualizar_pantalla("E");
+                            }
+                            else
+                            {
+                                num2 = 0;
+                                actualizar_pantalla(operar(num1, num2, "ln").ToString());
+                            }
+                            Is1 = false;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Seleccione una operación para realizar");
+                        }
+                        break;
                 }
             } catch {
                 MessageBox.Show("Esta operación requiere de dos operandos");
@@ -340,6 +367,16 @@ namespace Calculadora
                 num1 = obtener_valor(); // Se obtiene la base de la potencia
                 Is1 = true;
                 operacion = 8; // Operación para potencia
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            if (!Is1)
+            {
+                num1 = obtener_valor();
+                Is1 = true;              //Actualizamos el valor de la variable de control "0" indicará la operación matematica "logaritmo base e ó logaritmo natural"
+                operacion = 5;
             }
         }
 

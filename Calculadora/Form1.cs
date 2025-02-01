@@ -12,6 +12,7 @@ namespace Calculadora
 {
     //Isel Metzí Carrillo Mejía, Carnet: CM240437
     //Javier Enrique Monge Argueta, Carnet: MA240490
+    //Anderson Isaac Aguilar Ramos, Carnet: AR240256
     public partial class Form1 : Form
     {
         public double num1, resultado, num2;

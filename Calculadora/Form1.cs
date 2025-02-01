@@ -176,7 +176,7 @@ namespace Calculadora
                 case "ln":
                     //En este caso se evalua al no agregarle valor de cual sera la base del logaritmo
                     //Por defecto toma al logaritmo con base e que seria un logaritmo natural
-                    Resultado = Math.Log(operador1);
+                    Resultado = Math.Round( Math.Log(operador1),4);
                     break;
             }
             return Resultado;
@@ -376,7 +376,7 @@ namespace Calculadora
             {
                 num1 = obtener_valor();
                 Is1 = true;              //Actualizamos el valor de la variable de control "0" indicará la operación matematica "logaritmo base e ó logaritmo natural"
-                operacion = 5;
+                operacion = 9;
             }
         }
 
